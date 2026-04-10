@@ -1,0 +1,558 @@
+# ============================================================================
+# COMPREHENSIVE .GITIGNORE FOR AI/AUTONOMOUS AGENT PROJECTS
+# Windows & Linux | VSCode | Sensitive Files | AI/ML/LLM Protection
+# ============================================================================
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+
+# === Windows ===
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+*.swp
+*.swo
+*~
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === Linux ===
+*~
+.nfs*
+.directory
+.Trash-*
+*.swp
+*.swo
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+
+# === VSCode ===
+.vscode/
+*.code-workspace
+.history/
+.vscode-server/
+.vscode-server-insiders/
+
+# === JetBrains IDEs (PyCharm, IntelliJ, etc.) ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# === Sublime Text ===
+*.sublime-project
+*.sublime-workspace
+
+# === Vim ===
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+
+# === Emacs ===
+*~
+\#*\#
+.\#*
+*_flymake.py
+.#*
+
+# ============================================================================
+# DEVELOPMENT & BUILD FILES
+# ============================================================================
+
+# === Node.js ===
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+.node_repl_history
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+venv/
+ENV/
+env/
+.venv
+
+# === Java ===
+*.class
+*.jar
+*.war
+target/
+.gradle/
+.m2/
+
+# === Go ===
+*.o
+*.a
+*.so
+.DS_Store
+dist/
+
+# === Rust ===
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# === C/C++ ===
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+.cmake_build_directory
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# ============================================================================
+# PACKAGE MANAGERS & LOCK FILES
+# ============================================================================
+Gemfile.lock
+Pipfile.lock
+poetry.lock
+*.lock
+
+# ============================================================================
+# DATABASE & DATA FILES
+# ============================================================================
+
+# === Databases ===
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.mdb
+*.mdf
+*.ldf
+
+# === Data Files (sensitive) ===
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+!.gitkeep
+
+# ============================================================================
+# SENSITIVE & PERSONAL FILES - CRITICAL PROTECTION
+# ============================================================================
+
+# === API Keys, Credentials, Secrets ===
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.vault
+.secrets
+.secret
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# === SSH & Authentication ===
+.ssh/
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+known_hosts
+authorized_keys
+
+# === Cloud & Services Config ===
+.aws/
+.azure/
+.gcp/
+google-services.json
+firebase-config.json
+.firebase/
+
+# === Development Credentials ===
+config/secrets.yml
+config/database.yml
+.credentials
+.oauth_token
+.access_token
+.refresh_token
+
+# === Personal Data (files to never commit) ===
+*.pfx
+*.p12
+*.cer
+*.crt
+*.jks
+credentials.json
+auth.json
+token.json
+tokens.json
+
+# === Email & Communication ===
+*.eml
+.thunderbird/
+.evolution/
+
+# === Passwords & Auth Files ===
+*.kdb
+*.kdbx
+.git-credentials
+.gitcredentials
+
+# === SSL Certificates (dev only) ===
+*.crt
+*.key
+*.cert
+cert/
+certs/
+certificates/
+
+# ============================================================================
+# AI/ML/LLM SPECIFIC - CRITICAL FOR AUTONOMOUS AGENTS
+# ============================================================================
+
+# === LLM API Keys & Credentials (CRITICAL) ===
+# These must NEVER be committed
+OPENAI_API_KEY
+ANTHROPIC_API_KEY
+GOOGLE_API_KEY
+HUGGINGFACE_TOKEN
+openai_key.txt
+claude_key.txt
+api_keys.txt
+llm_credentials/
+
+# === Serialized Models & Weights ===
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.model
+*.pth
+*.pt
+*.tf
+*.savedmodel/
+*.onnx
+*.safetensors
+*.weights
+models/
+model_weights/
+checkpoints/
+fine_tuned_models/
+model_checkpoints/
+pretrained_models/
+
+# === Vector Databases & Embeddings ===
+vector_store/
+embeddings/
+embedding_cache/
+*.faiss
+chromadb/
+chroma_data/
+pinecone_cache/
+vector_db_cache/
+weaviate_data/
+milvus_data/
+retrieval_index/
+knowledge_base/
+
+# === Training & Optimization ===
+training_logs/
+training_results/
+training_data/
+validation_data/
+test_data/
+metrics/
+experiments/
+experiment_logs/
+tensorboard_logs/
+wandb/
+.wandb/
+
+# === Agent-Specific Files ===
+agent_memory/
+agent_state/
+agent_logs/
+agent_cache/
+execution_logs/
+decision_logs/
+tool_outputs/
+agent_conversations/
+session_history/
+
+# === RAG & Knowledge Management ===
+retrieval_cache/
+document_store/
+indexed_documents/
+processed_documents/
+text_chunks/
+document_index/
+
+# === Generated AI Content ===
+generated_content/
+generated_listings/
+generated_descriptions/
+generated_images/
+ai_outputs/
+
+# === LLM Context & Conversation ===
+conversation_history/
+context_cache/
+prompt_cache/
+chat_logs/
+interaction_logs/
+
+# === Data Processing for AI ===
+data/raw/
+data/processed/
+data/transformed/
+data/augmented/
+datasets/
+dataset_cache/
+data_splits/
+
+# === Model Inference Cache ===
+inference_cache/
+prediction_results/
+model_outputs/
+batch_predictions/
+
+# ============================================================================
+# EBAY SELLER AGENT SPECIFIC
+# ============================================================================
+
+# === eBay API & Integration ===
+ebay_listings/
+ebay_cache/
+ebay_session/
+ebay_tokens/
+ebay_credentials/
+listing_templates/
+generated_listings/
+product_data/
+
+# === Trading Card Processing ===
+cards_processed/
+card_images/
+card_cache/
+card_metadata/
+card_listings/
+
+# === Auto Parts Listing ===
+parts_listings/
+parts_images/
+parts_metadata/
+parts_cache/
+
+# === Images & Media (temporary) ===
+temp_images/
+temp_media/
+image_cache/
+processed_images/
+resize_cache/
+thumbnail_cache/
+
+# === eBay Inventory ===
+inventory_cache/
+inventory_status/
+sold_history/
+price_history/
+
+# ============================================================================
+# API & INTEGRATION CACHES
+# ============================================================================
+
+cache/
+.cache/
+api_response_cache/
+request_cache/
+http_cache/
+webhook_logs/
+integration_logs/
+
+# ============================================================================
+# TEMPORARY & CACHE FILES
+# ============================================================================
+
+# === OS Temporary ===
+tmp/
+temp/
+*.tmp
+*.temp
+
+# === IDE Cache ===
+.cache/
+.caches/
+*.cache
+
+# === Logs ===
+*.log
+logs/
+log/
+
+# === Backup Files ===
+*.bak
+*.backup
+*~
+*.swp
+*.swo
+backup/
+backups/
+
+# ============================================================================
+# LOCAL DEVELOPMENT & TESTING
+# ============================================================================
+
+# === Local Config (keep per environment) ===
+local.conf
+local.ini
+local.properties
+
+# === Test Results ===
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+test_results/
+
+# === Debug & Profiling ===
+*.prof
+*.pprof
+.vprof/
+
+# ============================================================================
+# OS-SPECIFIC JUNK
+# ============================================================================
+
+# === Windows Specific ===
+*.lnk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+pagefile.sys
+hiberfil.sys
+
+# === Linux/Mac Specific ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================================================
+# PROJECT-SPECIFIC (Customize as needed)
+# ============================================================================
+
+# === Uploads (typically user-generated) ===
+uploads/
+downloads/
+user_files/
+
+# === Generated Files ===
+dist/
+build/
+*.min.js
+*.min.css
+
+# === Virtual Environments ===
+venv/
+.venv/
+env/
+ENV/
+
+# ============================================================================
+# IMPORTANT: Files you MAY want to track (comment out if needed)
+# ============================================================================
+
+# .gitkeep - Keep empty directories
+# .editorconfig - Share editor settings across team
+# .prettierrc - Share formatting rules
+# .eslintrc - Share linting rules
+# .env.example - Template for environment variables (TRACK THIS, not .env)
+# package-lock.json - For Node.js production (consider tracking)
+# poetry.lock - For Python production (consider tracking)
+# requirements.txt - Python dependencies (TRACK THIS)
+# .gitattributes - For git settings
+
+# ============================================================================
+# RECOMMENDED: Create these template files INSTEAD of committing actual values
+# ============================================================================
+
+# .env.example - Template showing required variables:
+# ANTHROPIC_API_KEY=your_key_here
+# OPENAI_API_KEY=your_key_here
+# EBAY_CLIENT_ID=your_id_here
+# DATABASE_URL=postgresql://user:pass@localhost/db
+
+# config.example.json - Template for configuration
+# requirements.txt - List of Python packages (run: pip freeze > requirements.txt)
+
+# ============================================================================
